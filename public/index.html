@@ -1,0 +1,25 @@
+<!-- public/index.html - Frontend for the chat application -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js Chat Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pure Node.js Real-time Chat Room</h1>
+  
+  <div id="chat-container">
+    <div id="messages"></div>
+    
+    <form id="message-form">
+      <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+      <button type="submit" id="send-button">Send</button>
+    </form>
+  </div>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
